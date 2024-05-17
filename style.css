@@ -1,0 +1,13 @@
+:root {
+    --verm: #D9042B;
+    --azul: #5545BF;
+    --verde: #2E8C3C;
+    --escuro: #732C02;
+    --claro: #D99F7E;
+}
+
+*{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
