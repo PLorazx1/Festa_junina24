@@ -40,7 +40,8 @@ nav {
 
 nav a {
     all: unset;
-    padding: 0 30px;
+    padding: 0 15px;
+    margin: 0 5px;
     font-family: var(--fonte);
     font-size: 30px;
     color: white;
