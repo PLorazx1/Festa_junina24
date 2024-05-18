@@ -11,6 +11,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--fonte);
 }
 
 body{
@@ -27,7 +28,6 @@ body header {
 
 body header h1, body header h2{
     text-align: center;
-    font-family: var(--fonte);
     color: white;
     margin: 0;
     font-size: 40px;
@@ -41,7 +41,6 @@ nav {
 nav a {
     all: unset;
     padding: 0 15px;
-    font-family: var(--fonte);
     font-size: 30px;
     color: white;
 }
@@ -52,10 +51,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.produto {
-    font-family: var(--fonte);
-}
-
+#pedido h1,
 .produto h1,
 .produto h3{
     padding: 15px;
@@ -75,7 +71,8 @@ table tbody td#texto{
     width: 50%;
 }
 
-table tbody td{
+table tbody td,
+table thead th{
     border: 1px solid var(--escuro);
 }
 
@@ -101,7 +98,6 @@ footer {
 
 footer p{
     color: white;
-    font-family: var(--fonte);
     padding: 10px;
     padding-top: 45px;
     font-size: 17px;
