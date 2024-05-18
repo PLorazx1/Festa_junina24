@@ -21,7 +21,7 @@ body{
 body header {
     background-color: var(--escuro);
     width: 100%;
-    height: 200px;
+    height: 250px;
     align-items: center;
 }
 
