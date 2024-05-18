@@ -2,13 +2,14 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>Cardápio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/imagens/favicon.ico">
+    <link rel="shortcut icon" href="imagens/favicon.ico">
+    <script src="comandos.js"></script>
 </head>
 <body>
     <header>
@@ -16,26 +17,56 @@
         <h2>Fique de olho em nosso cardápio!</h2>
     </header>
     <nav>
-        <a href="index.html">Comidas</a>
-        <a href="#">Bebidas</a>
+        <a href="#Comidas">Comidas</a>
+        <a href="#Bebidas">Bebidas</a>
         <a href="#">Pedido</a>
     </nav>
     <main>
-        <section class="produto">
-            <div id="produto_1">
-                <fieldset>
-                    <div class="dentro">
-                        <img src="/imagens/Imagem_ilustrativa.png" alt="foto do produto">
-                    </div>
-                    <div class="dentro">
-                        <h1>Nome do produto</h1>
-                        <h3>Descrição</h3>
-                    </div>
-                    <div class="dentro" id="valor">
-                        <h1 id="valor">Valor</h1>
-                    </div>
-                </fieldset>
-            </div>
+        <section id="Comidas" class="produto">
+            <h1>Comidas:</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img src="imagens/Imagem_ilustrativa.png" alt="Imagem do produto"></td>
+                        <td id="texto">
+                            <h1>Produto</h1>
+                            <h3>Descrição do produto</h3>
+                        </td>
+                        <td><h1><button type="button" onclick="">Valor</button></h1></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/Imagem_ilustrativa.png" alt="Imagem do produto"></td>
+                        <td>
+                            <h1>Produto 2</h1>
+                            <h3>Descrição do produto 2</h3>
+                        </td>
+                        <td><h1><button type="button" onclick="">Valor_2</button></h1></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="Bebidas" class="produto">
+            <h1>Bebidas:</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img src="imagens/Imagem_ilustrativa.png" alt="Imagem do produto"></td>
+                        <td id="texto">
+                            <h1>Produto</h1>
+                            <h3>Descrição do produto</h3>
+                        </td>
+                        <td><h1><button type="button" onclick="">Valor</button></h1></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagens/Imagem_ilustrativa.png" alt="Imagem do produto"></td>
+                        <td>
+                            <h1>Produto 2</h1>
+                            <h3>Descrição do produto 2</h3>
+                        </td>
+                        <td><h1><button type="button" onclick="">Valor_2</button></h1></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 </body>

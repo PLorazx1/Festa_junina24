@@ -21,7 +21,7 @@ body{
 body header {
     background-color: var(--escuro);
     width: 100%;
-    height: auto;
+    height: 150px;
     align-items: center;
 }
 
@@ -60,20 +60,41 @@ nav a:hover{
 
 .produto {
     font-family: var(--fonte);
-    /* text-align: center; */
 }
 
-fieldset{
+.produto h1,
+.produto h3{
+    padding: 15px;
+}
+
+table {
     width: 100%;
-    margin-top: 10px;
+    text-align: left;
+    border-collapse: collapse;
 }
 
-.dentro {
-    display: inline-block;
-    /* width: 100%; */
+table tbody {
+    line-height: 30px;
 }
 
-#valor {
-    margin-top: 10px;
-    float: right;
+table tbody td#texto{
+    width: 50%;
+}
+
+table tbody td{
+    border: 1px solid var(--escuro);
+}
+
+table tbody button {
+    all: unset;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--verde);
+    color: white;
+}
+
+table tbody button:hover{
+    background-color: var(--verm);
+    text-decoration: underline;
 }
