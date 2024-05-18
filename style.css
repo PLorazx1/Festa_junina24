@@ -33,12 +33,6 @@ body header h1, body header h2{
     font-size: 40px;
 }
 
-body header img {
-    float: right;
-    height: 50px;
-    width: 50px;
-}
-
 nav {
     background-color: var(--verde);
     text-align: center;
@@ -97,4 +91,18 @@ table tbody button {
 table tbody button:hover{
     background-color: var(--verm);
     text-decoration: underline;
+}
+
+footer {
+    background-color: var(--escuro);
+    text-align: center;
+    height: 100px;
+}
+
+footer p{
+    color: white;
+    font-family: var(--fonte);
+    padding: 10px;
+    padding-top: 45px;
+    font-size: 17px;
 }
