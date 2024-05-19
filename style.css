@@ -73,7 +73,8 @@ table tbody td#texto{
 
 table tbody td,
 table thead th{
-    border: 1px solid var(--escuro);
+    border-top: 1px solid var(--escuro);
+    border-bottom: 1px solid var(--escuro);
 }
 
 table tbody button {
