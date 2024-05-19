@@ -1,0 +1,2 @@
+var produto, preco, quantidade;
+
