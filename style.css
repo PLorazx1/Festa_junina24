@@ -19,14 +19,14 @@ body{
 
 }
 
-body header {
+header {
     background-color: var(--escuro);
     width: 100%;
     height: 250px;
     align-items: center;
 }
 
-body header h1, body header h2{
+header h1, header h2{
     text-align: center;
     color: white;
     margin: 0;
