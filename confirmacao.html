@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
-    <title>Cardápio</title>
+    <title>Confirmação</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +27,11 @@
             <div id="quantidade">
                 <h3>Você deseja comprar ticketes para PRODUTO.</h3>
                 <h3>Quantos tiketes?</h3>
-                <input type="number" placeholder="Número de ticketes">
+                <input id="input_quant" type="number" placeholder="Número de ticketes">
             </div>
             <div id="botoes_confirm">
-                <button type="button" class="cancelar">Cancelar</button>
-                <button type="button" class="confirmar">Confirmar</button>
+                <button type="button" class="cancelar" onclick="cancelar()">Cancelar</button>
+                <button type="button" class="confirmar" onclick="confirmar()">Confirmar</button>
             </div>
         </fieldset>
     </main><br><br>
