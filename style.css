@@ -87,6 +87,54 @@ table tbody button:hover{
     text-decoration: underline;
 }
 
+#campo_confirm {
+    padding: 10px;
+    margin: 15px;
+    border-color: var(--escuro);
+}
+
+#campo_confirm h1{
+    padding: 5px;
+}
+
+#campo_confirm #quantidade{
+    padding: 5px;
+}
+
+#campo_confirm #quantidade h3{
+    margin-top: 15px;
+}
+
+#campo_confirm #quantidade input{
+    margin: 15px 0;
+}
+
+#campo_confirm #botoes_confirm{
+    text-align: center;
+}
+
+#campo_confirm #botoes_confirm button{
+    all: unset;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#campo_confirm #botoes_confirm .cancelar{
+    background-color: var(--verm);
+}
+
+#campo_confirm #botoes_confirm .confirmar{
+    background-color: var(--verde);
+}
+
+#campo_confirm #botoes_confirm button:hover{
+    text-decoration: underline;
+    background-color: var(--azul);
+}
+
 footer {
     background-color: var(--escuro);
     text-align: center;
