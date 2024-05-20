@@ -67,10 +67,6 @@ table tbody {
     line-height: 30px;
 }
 
-table tbody td#texto{
-    width: 50%;
-}
-
 table tbody td,
 table thead th{
     border-top: 1px solid var(--escuro);
