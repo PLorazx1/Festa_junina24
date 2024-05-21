@@ -1,30 +1,23 @@
-var produto, preco, quantidade;
-var pedidos = [];
-/* TENTATIVA POR ID
-function testing(id){
-    
-    var teste = document.querySelector(`#${id}`);
-    alert(id);
-    
-};*/
-
-//TENTATIVA POR LISTAS
 const valores = [2.0, 3.5, 4];
 const produtos = ['tacaca', 'vatapa', 'bolo'];
 
 function comprar(cod){
-    preco = valores[cod];
-    produto = produtos[cod];
-    window.location.href = 'confirmacao.html';
-};
+    localStorage.setItem(`produto_${cod}`, produtos[cod]);
+    localStorage.setItem(`valor_${cod}`, valores[cod]);
+    window.location.href = `confirmacao.html?cod=${cod}`;
+}
 
 function cancelar(){
-    preco = undefined;
-    produto = undefined;
+    const urlParams = new URLSearchParams(window.location.search);
+    const cod = urlParams.get('cod');
+    localStorage.removeItem(`produto_${cod}`);
+    localStorage.removeItem(`valor_${cod}`);
     window.location.href = 'index.html';
-};
+}
 
 function confirmar(){
-    quantidade = document.querySelector('input_quant');
-    console.log(produto);
-};
+    const urlParams = new URLSearchParams(window.location.search);
+    const cod = urlParams.get('cod');
+    var quant = document.getElementById('input_quant');
+    localStorage.setItem(`quant_${cod}`, quant.value);
+}
