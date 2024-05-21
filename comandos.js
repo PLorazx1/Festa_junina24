@@ -7,6 +7,13 @@ function comprar(cod){
     window.location.href = `confirmacao.html?cod=${cod}`;
 }
 
+function proc_produto(){
+    const urlParams = new URLSearchParams(window.location.search);
+    const cod = urlParams.get('cod');
+    var el = document.getElementById('interativo');
+    el.innerHTML(`<h3>Você deseja comprar ticketes para <strong>${produtos[cod]}</strong>.</h3>`)
+}
+
 function cancelar(){
     const urlParams = new URLSearchParams(window.location.search);
     const cod = urlParams.get('cod');
