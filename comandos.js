@@ -11,7 +11,7 @@ function proc_produto(){
     const urlParams = new URLSearchParams(window.location.search);
     const cod = urlParams.get('cod');
     var el = document.getElementById('interativo');
-    el.innerHTML(`<h3>Você deseja comprar ticketes para <strong>${produtos[cod]}</strong>.</h3>`)
+    el.innerHTML = `<h3>Você deseja comprar ticketes para ${produtos[cod]}.</h3>`;
 }
 
 function cancelar(){
