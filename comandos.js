@@ -28,20 +28,13 @@ function confirmar(){
     window.location.href = 'index.html';
 }
 
-function proc_valor(prod){
-    for(var i=0; i<produtos.length; i++){
-        if(produtos[i]===prod) return valores[i];
-    }
-    return null;
-}
-
 function comandar(){
     var super_total = 0;
     var el = document.getElementById('comanda');
     for(var j=0; j<((localStorage.length - 1)/3); j++){
         var produto = localStorage.getItem(`produto_${j}`);
         var quant = localStorage.getItem(`quant_${j}`);
-        var preco = proc_valor(produto);
+        var preco = localStorage.getItem(`valor_${j}`);
         var total = quant * preco;
         var linha = `
         <tr>
