@@ -62,3 +62,8 @@ function comandar(){
     </tr>`;
     el.innerHTML = ult_linha;
 }
+
+function limpar(){
+    localStorage.clear();
+    window.location.reload();
+}

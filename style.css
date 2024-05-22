@@ -135,6 +135,24 @@ table tbody button:hover{
     background-color: var(--azul);
 }
 
+#limpar {
+    text-align: center;
+}
+
+#limpar button{
+    all: unset;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--azul);
+    color: white;
+    border-radius: 15px;
+}
+
+#limpar button:hover{
+    background-color: var(--verm);
+    text-decoration: underline;
+}
+
 footer {
     background-color: var(--escuro);
     text-align: center;
