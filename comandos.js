@@ -31,7 +31,7 @@ function confirmar(){
 function comandar(){
     var super_total = 0;
     var el = document.getElementById('comanda');
-    for(var j=0; j<((localStorage.length - 1)/3); j++){
+    for(var j=0; j<(Number(localStorage.getItem('i'))); j++){
         var produto = localStorage.getItem(`produto_${j}`);
         var quant = localStorage.getItem(`quant_${j}`);
         var preco = localStorage.getItem(`valor_${j}`);
