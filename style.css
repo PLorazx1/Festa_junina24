@@ -87,6 +87,11 @@ table tbody button:hover{
     text-decoration: underline;
 }
 
+.esgotado {
+    color: var(--verm);
+    text-decoration: line-through;
+}
+
 #campo_confirm {
     padding: 10px;
     margin: 15px;
