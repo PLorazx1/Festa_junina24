@@ -110,6 +110,11 @@ table tbody button:hover{
     margin-top: 15px;
 }
 
+#campo_confirm #quantidade h3 strong{
+    font-size: 23px;
+    text-decoration: underline;
+}
+
 #campo_confirm #quantidade input{
     margin: 15px 0;
 }
