@@ -1,5 +1,8 @@
-const valores = [2.0, 3.5, 4];
-const produtos = ['tacaca', 'vatapa', 'bolo'];
+const valores = [15, 10, 5, 8, 8, 8, 5, 3, 5, 5, 5, 5, 3, 5];
+const produtos = [
+'tacacá', 'vatapá', 'churrasco', 'arroz com galinha', 'hot dog', 'caldo de galinha', 
+'mingual de milho branco', 'pipoca','bolo', 'sucos', 'refrigerante', 'cerveja', 'água', 'jogos'
+];
 if(localStorage.length == 0) localStorage.setItem('i', 0);
 
 function comprar(cod){
