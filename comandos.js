@@ -30,33 +30,41 @@ function confirmar(){
 
 function comandar(){
     var super_total = 0;
-    var el = document.getElementById('comanda');
     for(var j=0; j<(Number(localStorage.getItem('i'))); j++){
+        var el = document.getElementById('comanda');
         var produto = localStorage.getItem(`produto_${j}`);
         var quant = localStorage.getItem(`quant_${j}`);
         var preco = localStorage.getItem(`valor_${j}`);
         var total = quant * preco;
-        var linha = `
-        <tr>
-            <td>${produto}</td>
-            <td>${quant}</td>
-            <td>${preco}</td>
-            <td>${total}</td>
-        </tr>`;
         super_total += total;
-        el.innerHTML = linha;
+        var linhaNova = document.createElement('tr');
+        // var colunaNova = document.createElement('td');
+        var td_produto = document.createElement('td').appendChild(document.createTextNode(`${produto}`));
+        linhaNova.appendChild(td_produto);
+        var td_quant = document.createElement('td').appendChild(document.createTextNode(`${quant}`));
+        linhaNova.appendChild(td_quant);
+        var td_preco = document.createElement('td').appendChild(document.createTextNode(`${preco}`));
+        linhaNova.appendChild(td_preco);
+        var td_total = document.createElement('td').appendChild(document.createTextNode(`${total}`));
+        linhaNova.appendChild(td_total);
+        el.append(linhaNova);
+        // linhaNova.innerHTML = `
+        // <td>${produto}</td>
+        // <td>${quant}</td>
+        // <td>${preco}</td>
+        // <td>${total}</td>`;
     }
-    var ult_linha = `
-    <tr>
-        <td>----</td>
-        <td>----</td>
-        <td>Total:</td>
-        <td>${super_total}</td>
+    var el = document.getElementById('super_total');
+    var ult_linha = `<tr>
+    <td>----</td>
+    <td>----</td>
+    <td>Total:</td>
+    <td>${super_total}</td>
     </tr>`;
     el.innerHTML = ult_linha;
 }
 
 function limpar(){
     localStorage.clear();
-    window.location.reload();
+    window.location.href = 'index.html';
 }
