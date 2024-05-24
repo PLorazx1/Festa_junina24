@@ -67,3 +67,10 @@ function limpar(){
     localStorage.clear();
     window.location.href = 'index.html';
 }
+
+function copiar(){
+    let text = '00020101021126810014BR.GOV.BCB.PIX2559pix-qr.mercadopago.com/instore/ol/v2/3Z8aGUQhhhu20ZlClEHSnj5204000053039865802BR5924Centro Mariapolis Gloria6009SAO PAULO62080504mpis63049555';
+    navigator.clipboard.writeText(text).then(() => {
+        alert('Copiado para a area de transferência')
+    });
+}
