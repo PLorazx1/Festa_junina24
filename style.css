@@ -124,7 +124,9 @@ table tbody button:hover{
 }
 
 #campo_confirm #quantidade input{
+    padding: 10px;
     margin: 15px 0;
+    font-size: 17px;
 }
 
 #campo_confirm #botoes_confirm{
