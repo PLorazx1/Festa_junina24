@@ -24,11 +24,16 @@ function confirmar(){
     const urlParams = new URLSearchParams(window.location.search);
     const cod = urlParams.get('cod');
     var quant = document.getElementById('input_quant');
-    localStorage.setItem(`produto_${localStorage.getItem('i')}`, produtos[cod]);
-    localStorage.setItem(`valor_${localStorage.getItem('i')}`, valores[cod]);
-    localStorage.setItem(`quant_${localStorage.getItem('i')}`, quant.value);
-    localStorage.setItem('i', (Number(localStorage.getItem('i')) + 1));
-    window.location.href = 'index.html';
+    if (quant.value > 0){
+        localStorage.setItem(`produto_${localStorage.getItem('i')}`, produtos[cod]);
+        localStorage.setItem(`valor_${localStorage.getItem('i')}`, valores[cod]);
+        localStorage.setItem(`quant_${localStorage.getItem('i')}`, quant.value);
+        localStorage.setItem('i', (Number(localStorage.getItem('i')) + 1));
+        window.location.href = 'index.html';
+    }
+    else {
+        cancelar();
+    }
 }
 
 function comandar(){
