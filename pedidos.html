@@ -22,12 +22,9 @@
         <a href="pedidos.html">Pedido</a>
     </nav>
     <main>
-        <section id="detalhamento">
-            <h3>Agora que você fez sua comanda, vá ao caixa e apresente-a, assim você receberá as instruções necessárias para concluir o atendimento</h3>
-        </section>
         <section id="pedido">
             <h1>Seu pedido:</h1>
-            <table>
+            <table id="tabela_pedido">
                 <thead>
                     <tr>
                         <th>Produto</th>
@@ -41,13 +38,18 @@
                 <tfoot id="super_total">
                 </tfoot>
             </table><br><br>
-            <div id="limpar">
-                <button onclick="limpar()">Limpar comanda</button>
-            </div>
+        </section>
+        <section id="detalhamento">
+            <h3>Agora que você fez o seu pedido, dirija-se ao caixa para conclusão do atendimento. ao concluir o pagamento, limpe a comanda. Agradecimentos.</h3>
+        </section>
+        <section id="limpar">
+            <button onclick="limpar()">Limpar comanda</button>
         </section>
         <section id="pix">
             <h1>Chave pix:</h1>
             <img src="imagens/QR_code.jpeg" alt="QR code para pix">
+            <h1>Copie e cole:</h1>
+            <h3><a href="00020101021126810014BR.GOV.BCB.PIX2559pix-qr.mercadopago.com/instore/ol/v2/3Z8aGUQhhhu20ZlClEHSnj5204000053039865802BR5924Centro Mariapolis Gloria6009SAO PAULO62080504mpis63049555">Segure aqui para copiar</a></h3>
         </section>
     </main><br><br>
     <footer>
