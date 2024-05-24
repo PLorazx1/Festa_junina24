@@ -61,6 +61,10 @@ nav a:hover{
     padding: 15px;
 }
 
+#title{
+    text-align: center;
+}
+
 table {
     width: 100%;
     text-align: left;
