@@ -100,14 +100,6 @@ table tbody button:hover{
     font-size: 25px;
 }
 
-#tabela_pedido thead{
-    font-size: 20px;
-}
-
-#tabela_pedido #super_total{
-    font-size: 30px;
-}
-
 #campo_confirm {
     padding: 10px;
     margin: 15px;
