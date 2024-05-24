@@ -40,22 +40,13 @@ function comandar(){
         var preco = localStorage.getItem(`valor_${j}`);
         var total = quant * preco;
         super_total += total;
-        var linhaNova = document.createElement('tr');
-        // var colunaNova = document.createElement('td');
-        var td_produto = document.createElement('td').appendChild(document.createTextNode(`${produto}`));
-        linhaNova.appendChild(td_produto);
-        var td_quant = document.createElement('td').appendChild(document.createTextNode(`${quant}`));
-        linhaNova.appendChild(td_quant);
-        var td_preco = document.createElement('td').appendChild(document.createTextNode(`${preco}`));
-        linhaNova.appendChild(td_preco);
-        var td_total = document.createElement('td').appendChild(document.createTextNode(`${total}`));
-        linhaNova.appendChild(td_total);
-        el.append(linhaNova);
-        // linhaNova.innerHTML = `
-        // <td>${produto}</td>
-        // <td>${quant}</td>
-        // <td>${preco}</td>
-        // <td>${total}</td>`;
+        var linhas = `<tr>
+                <td>${produto}</td>
+                <td>${quant}</td>
+                <td>${preco}</td>
+                <td>${total}</td>
+            </tr>`
+        el.insertAdjacentHTML('beforeend', linhas);
     }
     var el = document.getElementById('super_total');
     var ult_linha = `<tr>
