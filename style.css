@@ -173,7 +173,8 @@ table tbody button:hover{
     text-align: center;
 }
 
-#limpar button{
+#limpar button,
+#pix #botao_copiar{
     all: unset;
     cursor: pointer;
     padding: 10px;
@@ -182,7 +183,8 @@ table tbody button:hover{
     border-radius: 15px;
 }
 
-#limpar button:hover{
+#limpar button:hover,
+#pix #botao_copiar:hover{
     background-color: var(--verm);
     text-decoration: underline;
 }
