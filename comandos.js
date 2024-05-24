@@ -43,8 +43,8 @@ function comandar(){
         var linhas = `<tr>
                 <td>${produto}</td>
                 <td>${quant}</td>
-                <td>${preco}</td>
-                <td>${total}</td>
+                <td>${preco},00</td>
+                <td>${total},00</td>
             </tr>`
         el.insertAdjacentHTML('beforeend', linhas);
     }
@@ -53,7 +53,7 @@ function comandar(){
     <td>----</td>
     <td>----</td>
     <td>Total:</td>
-    <td>${super_total}</td>
+    <td>${super_total},00</td>
     </tr>`;
     el.innerHTML = ult_linha;
 }
