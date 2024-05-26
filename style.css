@@ -219,6 +219,7 @@ footer p{
 }
 
 footer #pro_topo img{
+    cursor: pointer;
     float: right;
     height: 65px;
     width: auto;
