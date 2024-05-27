@@ -205,13 +205,18 @@ table tbody button:hover{
     width: 200px;
 }
 
+#ir_comanda p{
+    padding: 20px;
+    font-size: 18px;
+}
+
 footer {
     background-color: var(--escuro);
     text-align: center;
     height: 120px;
 }
 
-#home{
+#home{ /*footer*/
     height: 185px;
 }
 
