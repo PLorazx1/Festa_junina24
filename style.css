@@ -208,14 +208,31 @@ table tbody button:hover{
 footer {
     background-color: var(--escuro);
     text-align: center;
-    height: 150px;
+    height: 120px;
+}
+
+#home{
+    height: 185px;
 }
 
 footer p{
     color: white;
     padding: 10px;
-    padding-top: 45px;
     font-size: 17px;
+}
+
+footer #logo_insta{
+    height: 20px;
+}
+
+footer #logo_linkedin{
+    height: 25px;
+}
+
+footer #link{
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 footer #pro_topo img{
