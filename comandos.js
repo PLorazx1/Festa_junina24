@@ -1,4 +1,4 @@
-const valores = [15, 10, 5, 8, 8, 8, 5, 3, 5, 5, 5, 5, 3, 5];
+const valores = [15, 10, 5, 8, 8, 8, 5, 3, 5, 5, 5, 5, 2, 5];
 const produtos = [
 'tacacá', 'vatapá', 'churrasco', 'arroz com galinha', 'hot dog', 'caldo de galinha', 
 'mingau de milho branco', 'pipoca','bolo', 'sucos', 'refrigerante', 'cerveja', 'água', 'jogos'
