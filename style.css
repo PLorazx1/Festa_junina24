@@ -212,12 +212,12 @@ table tbody button:hover{
 footer {
     background-color: var(--escuro);
     text-align: center;
-    height: 120px;
+    height: 100%;
 }
 
 #home{ /*footer*/
     height: 185px;
-}
+} 
 
 footer p{
     color: white;
