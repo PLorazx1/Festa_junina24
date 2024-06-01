@@ -9,6 +9,10 @@ function comprar(cod){
     window.location.href = `confirmacao.html?cod=${cod}`;
 }
 
+function esgotado(){
+    alert('Produto esgotado!');
+}
+
 function proc_produto(){
     const urlParams = new URLSearchParams(window.location.search);
     const cod = urlParams.get('cod');
